@@ -46,11 +46,11 @@ public class AttendanceService {
 
     public void checkValidEmployee(int empId) throws Exception {
         List<User> emp=attendanceMapper.findEmployeeByEmpId(empId);
-        if (emp == null) {
-            log.error("Employee ID {} not found in Employee table.", empId);
-            throw new Exception("Invalid Employee ID");
+        if (emp.isEmpty()) {
+            log.error("Employee ID {} not found in employee_detail table.", empId);
+            throw new Exception("Employee Id not found in employee table");
         }
-        log.info("Employee ID {} is valid.", empId);
+        log.info("Employee ID {} found in employee_detail table.", empId);
     }
 
     public List<User> checkEmpty(List<User> employees) {
@@ -58,7 +58,7 @@ public class AttendanceService {
             log.info("Found {} employees.", employees.size());
             return employees;
         } else {
-            log.error("No employees found.");
+            log.error("Employee not found.");
             return null;
         }
     }

@@ -41,7 +41,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void testRegisterUser_Failure() {
+    void test_registerUser_Failure() {
         User user = new User(2, "Sudhanshu", "sudhanshu11@gmail.com", "HR");
         doThrow(new RuntimeException("Database error")).when(userMapper).registerUser(user);
         assertDoesNotThrow(() -> userService.registerUser(user));
@@ -58,7 +58,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void test_GetUserById_NotFound() {
+    void test_getUserById_NotFound() {
         when(userMapper.findById(4)).thenReturn(null);
         User result = userService.getEmpById(4);
         assertNull(result);
@@ -66,7 +66,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void test_RemoveEmployee_Success() {
+    void test_removeEmployee_Success() {
         int empId = 5;
         doNothing().when(userMapper).softDelete(empId);
         boolean result = userService.removeEmployee(empId);
@@ -75,7 +75,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void test_RemoveEmployee_Failure() {
+    void test_removeEmployee_Failure() {
         int empId = 6;
         doThrow(new RuntimeException("Database error")).when(userMapper).softDelete(empId);
         boolean result = userService.removeEmployee(empId);
@@ -84,7 +84,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void test_ShowActiveEmployee() {
+    void test_showActiveEmployee() {
         List<User> activeUsers = new ArrayList<>();
         activeUsers.add(new User(7, "Sudhanshu", "Sudhanshu1@gmail.com", "SDE"));
         when(userMapper.showactive()).thenReturn(activeUsers);
