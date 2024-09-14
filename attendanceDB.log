@@ -4189,3 +4189,435 @@ java.lang.Exception: Employee Id not found in employee_detail table
 00:59:52.247 [main] INFO  c.e.A.ImplService.AttendanceService - Found 1 employees.
 00:59:52.247 [main] INFO  c.e.A.ImplService.AttendanceService - Retrieved : 1 employees are absent today.
 01:00:09.058 [main] INFO  c.e.A.ImplService.UserService - Successfully registered user with ID: 1
+01:04:28.221 [http-nio-9091-exec-7] WARN  c.e.A.ImplService.UserService - No user found with ID: 2
+01:04:28.237 [http-nio-9091-exec-7] INFO  c.e.A.ImplService.UserService - Successfully registered user with ID: 2
+01:05:03.940 [http-nio-9091-exec-5] INFO  c.e.A.ImplService.AttendanceService - Employee ID 2 found in employee_detail table.
+01:05:03.951 [http-nio-9091-exec-5] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 2
+01:05:18.812 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Employee ID 2 found in employee_detail table.
+01:05:18.826 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 2
+01:06:32.166 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.UserService - Successfully fetched user with ID: 2
+01:06:48.403 [http-nio-9091-exec-3] INFO  c.e.A.ImplService.UserService - Successfully fetched user with ID: 2
+01:07:56.653 [main] INFO  c.e.A.ImplService.AttendanceService - Retrieved 1 attendance records for page 1.
+01:07:56.663 [main] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+01:07:56.664 [main] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:07:56.674 [main] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+01:07:56.681 [main] INFO  c.e.A.ImplService.AttendanceService - Fetching employees present today.
+01:07:56.682 [main] INFO  c.e.A.ImplService.AttendanceService - Found 1 employees.
+01:07:56.682 [main] INFO  c.e.A.ImplService.AttendanceService - Retrieved : 1 employees are  present today.
+01:07:56.683 [main] INFO  c.e.A.ImplService.AttendanceService - Fetching employee with ID: 1
+01:07:56.683 [main] INFO  c.e.A.ImplService.AttendanceService - Found 1 employees 
+01:07:56.685 [main] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:07:56.685 [main] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+01:07:56.688 [main] INFO  c.e.A.ImplService.AttendanceService - Fetching employees absent today.
+01:07:56.688 [main] INFO  c.e.A.ImplService.AttendanceService - Found 1 employees.
+01:07:56.688 [main] INFO  c.e.A.ImplService.AttendanceService - Retrieved : 1 employees are absent today.
+01:08:00.835 [main] ERROR c.e.A.ImplService.UserService - Failed to register user with ID: 2. Error: Database error
+01:08:00.847 [main] ERROR c.e.A.ImplService.UserService - Failed to remove employee with ID: 6. Error: Database error
+01:08:00.853 [main] INFO  c.e.A.ImplService.UserService - Successfully fetched user with ID: 3
+01:08:00.856 [main] INFO  c.e.A.ImplService.UserService - Successfully registered user with ID: 1
+01:08:00.858 [main] INFO  c.e.A.ImplService.UserService - Successfully fetched 1 active employees.
+01:08:00.860 [main] WARN  c.e.A.ImplService.UserService - No user found with ID: 4
+01:08:00.863 [main] INFO  c.e.A.ImplService.UserService - Successfully removed employee with ID: 5
+01:08:22.264 [main] INFO  c.e.A.ImplService.AttendanceService - Retrieved 1 attendance records for page 1.
+01:08:22.274 [main] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+01:08:22.275 [main] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:08:22.284 [main] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+01:08:22.291 [main] INFO  c.e.A.ImplService.AttendanceService - Fetching employees present today.
+01:08:22.291 [main] INFO  c.e.A.ImplService.AttendanceService - Found 1 employees.
+01:08:22.292 [main] INFO  c.e.A.ImplService.AttendanceService - Retrieved : 1 employees are  present today.
+01:08:22.293 [main] INFO  c.e.A.ImplService.AttendanceService - Fetching employee with ID: 1
+01:08:22.293 [main] INFO  c.e.A.ImplService.AttendanceService - Found 1 employees 
+01:08:22.295 [main] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:08:22.295 [main] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+01:08:22.297 [main] INFO  c.e.A.ImplService.AttendanceService - Fetching employees absent today.
+01:08:22.297 [main] INFO  c.e.A.ImplService.AttendanceService - Found 1 employees.
+01:08:22.297 [main] INFO  c.e.A.ImplService.AttendanceService - Retrieved : 1 employees are absent today.
+01:08:49.357 [main] ERROR c.e.A.ImplService.UserService - Failed to register user with ID: 2. Error: Database error
+01:08:49.369 [main] ERROR c.e.A.ImplService.UserService - Failed to remove employee with ID: 6. Error: Database error
+01:08:49.375 [main] INFO  c.e.A.ImplService.UserService - Successfully fetched user with ID: 3
+01:08:49.378 [main] INFO  c.e.A.ImplService.UserService - Successfully registered user with ID: 1
+01:08:49.380 [main] INFO  c.e.A.ImplService.UserService - Successfully fetched 1 active employees.
+01:08:49.383 [main] WARN  c.e.A.ImplService.UserService - No user found with ID: 4
+01:08:49.385 [main] INFO  c.e.A.ImplService.UserService - Successfully removed employee with ID: 5
+01:30:13.964 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01:30:13.966 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:30:13.972 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+01:30:25.786 [main] INFO  c.e.A.AttendenceMyBatApplication - Starting AttendenceMyBatApplication on DESKTOP-L42UBRL with PID 18876 (D:\EmployeeAttendenceSystem\target\classes started by sudha in D:\EmployeeAttendenceSystem)
+01:30:25.789 [main] INFO  c.e.A.AttendenceMyBatApplication - No active profile set, falling back to default profiles: default
+01:30:26.857 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$29326757] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:30:27.339 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+01:30:27.353 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9091"]
+01:30:27.360 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:30:27.361 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+01:30:27.370 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin\;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sudha\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.6.3\bin\;;.]
+01:30:27.480 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:30:27.480 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1648 ms
+01:30:28.047 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+01:30:28.151 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01:30:28.350 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:30:28.369 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:30:28.401 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:30:28.629 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9091"]
+01:30:28.648 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path ''
+01:30:28.650 [main] INFO  c.e.A.AttendenceMyBatApplication - Started AttendenceMyBatApplication in 3.149 seconds (JVM running for 3.6)
+01:30:35.483 [http-nio-9091-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:30:35.483 [http-nio-9091-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:30:35.490 [http-nio-9091-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01:30:35.544 [http-nio-9091-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:30:35.705 [http-nio-9091-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01:30:35.751 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Employee ID 2 found in employee_detail table.
+01:30:35.760 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 2
+01:30:37.131 [http-nio-9091-exec-3] INFO  c.e.A.ImplService.AttendanceService - Employee ID 2 found in employee_detail table.
+01:30:37.133 [http-nio-9091-exec-3] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 2
+01:31:14.753 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01:31:14.755 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:31:14.763 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+01:45:17.644 [main] INFO  c.e.A.AttendenceMyBatApplication - Starting AttendenceMyBatApplication on DESKTOP-L42UBRL with PID 16936 (D:\EmployeeAttendenceSystem\target\classes started by sudha in D:\EmployeeAttendenceSystem)
+01:45:17.646 [main] INFO  c.e.A.AttendenceMyBatApplication - No active profile set, falling back to default profiles: default
+01:45:18.646 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d14c8915] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:45:19.120 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+01:45:19.137 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9091"]
+01:45:19.147 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:45:19.147 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+01:45:19.156 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin\;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sudha\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.6.3\bin\;;.]
+01:45:19.266 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:45:19.266 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1580 ms
+01:45:19.836 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+01:45:19.943 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01:45:20.143 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:45:20.169 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:45:20.198 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:45:20.421 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9091"]
+01:45:20.440 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path ''
+01:45:20.442 [main] INFO  c.e.A.AttendenceMyBatApplication - Started AttendenceMyBatApplication in 3.069 seconds (JVM running for 3.522)
+01:45:22.877 [http-nio-9091-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:45:22.878 [http-nio-9091-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:45:22.885 [http-nio-9091-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01:45:22.934 [http-nio-9091-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:45:23.099 [http-nio-9091-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01:45:23.146 [http-nio-9091-exec-2] ERROR c.e.A.ImplService.AttendanceService - Employee ID 5 not found in employee_detail table.
+01:45:23.150 [http-nio-9091-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Employee Id not found in employee table] with root cause
+java.lang.Exception: Employee Id not found in employee table
+	at com.example.AttendenceMyBat.ImplService.AttendanceService.checkValidEmployee(AttendanceService.java:51)
+	at com.example.AttendenceMyBat.ImplService.AttendanceService.checkIn(AttendanceService.java:18)
+	at com.example.AttendenceMyBat.RestController.AttendanceController.checkIn(AttendanceController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+01:45:25.001 [http-nio-9091-exec-4] ERROR c.e.A.ImplService.AttendanceService - Employee ID 5 not found in employee_detail table.
+01:45:25.002 [http-nio-9091-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Employee Id not found in employee table] with root cause
+java.lang.Exception: Employee Id not found in employee table
+	at com.example.AttendenceMyBat.ImplService.AttendanceService.checkValidEmployee(AttendanceService.java:51)
+	at com.example.AttendenceMyBat.ImplService.AttendanceService.checkIn(AttendanceService.java:18)
+	at com.example.AttendenceMyBat.RestController.AttendanceController.checkIn(AttendanceController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+01:45:30.237 [http-nio-9091-exec-6] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:45:30.320 [http-nio-9091-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=!'2024-09-15'' at line 4
+### The error may exist in com/example/AttendenceMyBat/mapper/AttendanceMapper.java (best guess)
+### The error may involve com.example.AttendenceMyBat.mapper.AttendanceMapper.CheckIn-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO attendance (emp_id, check_in_time, check_in_date)     SELECT ?, ?, ?     FROM employee_detail     WHERE emp_id = ? AND check_in_date=!?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=!'2024-09-15'' at line 4
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=!'2024-09-15'' at line 4] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=!'2024-09-15'' at line 4
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy62.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy67.CheckIn(Unknown Source)
+	at com.example.AttendenceMyBat.ImplService.AttendanceService.checkIn(AttendanceService.java:23)
+	at com.example.AttendenceMyBat.RestController.AttendanceController.checkIn(AttendanceController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+01:54:17.563 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01:54:17.565 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:54:17.574 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+01:54:21.873 [main] INFO  c.e.A.AttendenceMyBatApplication - Starting AttendenceMyBatApplication on DESKTOP-L42UBRL with PID 14016 (D:\EmployeeAttendenceSystem\target\classes started by sudha in D:\EmployeeAttendenceSystem)
+01:54:21.876 [main] INFO  c.e.A.AttendenceMyBatApplication - No active profile set, falling back to default profiles: default
+01:54:22.939 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8265f2a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:54:23.400 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+01:54:23.415 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9091"]
+01:54:23.422 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:54:23.422 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+01:54:23.431 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin\;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sudha\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.6.3\bin\;;.]
+01:54:23.537 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:54:23.537 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1622 ms
+01:54:24.091 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+01:54:24.188 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01:54:24.376 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:54:24.398 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:54:24.437 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:54:24.640 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9091"]
+01:54:24.659 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path ''
+01:54:24.661 [main] INFO  c.e.A.AttendenceMyBatApplication - Started AttendenceMyBatApplication in 3.064 seconds (JVM running for 3.548)
+01:54:33.063 [http-nio-9091-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:54:33.063 [http-nio-9091-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:54:33.069 [http-nio-9091-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+01:54:33.120 [http-nio-9091-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:54:33.281 [http-nio-9091-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01:54:33.331 [http-nio-9091-exec-4] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:54:33.341 [http-nio-9091-exec-4] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+01:54:35.686 [http-nio-9091-exec-6] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:54:35.688 [http-nio-9091-exec-6] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+01:59:46.561 [http-nio-9091-exec-3] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:59:46.576 [http-nio-9091-exec-3] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+01:59:48.210 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+01:59:48.212 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+02:00:04.661 [http-nio-9091-exec-8] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+02:00:04.663 [http-nio-9091-exec-8] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:00:04.676 [http-nio-9091-exec-8] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+02:00:06.048 [http-nio-9091-exec-9] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+02:00:06.050 [http-nio-9091-exec-9] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:00:06.052 [http-nio-9091-exec-9] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+02:00:06.682 [http-nio-9091-exec-10] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+02:00:06.683 [http-nio-9091-exec-10] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:00:06.695 [http-nio-9091-exec-10] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+02:00:51.822 [http-nio-9091-exec-1] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:00:51.823 [http-nio-9091-exec-1] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+02:00:52.284 [http-nio-9091-exec-4] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:00:52.286 [http-nio-9091-exec-4] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+02:01:15.721 [http-nio-9091-exec-6] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+02:01:15.723 [http-nio-9091-exec-6] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:01:15.736 [http-nio-9091-exec-6] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+02:11:33.259 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+02:11:33.261 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02:11:33.278 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02:11:35.105 [main] INFO  c.e.A.AttendenceMyBatApplication - Starting AttendenceMyBatApplication on DESKTOP-L42UBRL with PID 2176 (D:\EmployeeAttendenceSystem\target\classes started by sudha in D:\EmployeeAttendenceSystem)
+02:11:35.108 [main] INFO  c.e.A.AttendenceMyBatApplication - No active profile set, falling back to default profiles: default
+02:11:36.138 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5b85377] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:11:36.615 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+02:11:36.630 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9091"]
+02:11:36.639 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+02:11:36.639 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+02:11:36.648 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin\;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sudha\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.6.3\bin\;;.]
+02:11:36.762 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+02:11:36.763 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1614 ms
+02:11:37.359 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+02:11:37.456 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+02:11:37.643 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+02:11:37.666 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+02:11:37.700 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+02:11:37.915 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9091"]
+02:11:37.936 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path ''
+02:11:37.939 [main] INFO  c.e.A.AttendenceMyBatApplication - Started AttendenceMyBatApplication in 3.157 seconds (JVM running for 3.692)
+02:11:41.248 [http-nio-9091-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:11:41.248 [http-nio-9091-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02:11:41.255 [http-nio-9091-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+02:11:41.289 [http-nio-9091-exec-5] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+02:11:41.312 [http-nio-9091-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02:11:41.475 [http-nio-9091-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02:11:41.520 [http-nio-9091-exec-5] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:11:41.531 [http-nio-9091-exec-5] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+02:11:46.016 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:11:46.019 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+02:14:53.460 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+02:14:53.463 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02:14:53.476 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02:35:43.554 [main] INFO  c.e.A.AttendenceMyBatApplication - Starting AttendenceMyBatApplication on DESKTOP-L42UBRL with PID 14276 (D:\EmployeeAttendenceSystem\target\classes started by sudha in D:\EmployeeAttendenceSystem)
+02:35:43.557 [main] INFO  c.e.A.AttendenceMyBatApplication - No active profile set, falling back to default profiles: default
+02:35:44.576 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80e447] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+02:35:45.023 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+02:35:45.038 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9091"]
+02:35:45.047 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+02:35:45.047 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+02:35:45.057 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin\;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\sudha\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.6.3\bin\;;.]
+02:35:45.160 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+02:35:45.160 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1554 ms
+02:35:45.751 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+02:35:45.871 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+02:35:46.049 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+02:35:46.074 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+02:35:46.109 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+02:35:46.316 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9091"]
+02:35:46.334 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path ''
+02:35:46.336 [main] INFO  c.e.A.AttendenceMyBatApplication - Started AttendenceMyBatApplication in 3.053 seconds (JVM running for 3.493)
+02:35:59.407 [http-nio-9091-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:35:59.408 [http-nio-9091-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02:35:59.414 [http-nio-9091-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+02:35:59.460 [http-nio-9091-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02:35:59.621 [http-nio-9091-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02:35:59.670 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:35:59.673 [http-nio-9091-exec-2] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+02:36:31.309 [http-nio-9091-exec-3] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:36:31.310 [http-nio-9091-exec-3] INFO  c.e.A.ImplService.AttendanceService - Successfully checked in employee with ID: 1
+02:36:48.750 [http-nio-9091-exec-10] INFO  c.e.A.ImplService.AttendanceService - Attempting to check out employee with ID: 1
+02:36:48.752 [http-nio-9091-exec-10] INFO  c.e.A.ImplService.AttendanceService - Employee ID 1 found in employee_detail table.
+02:36:48.757 [http-nio-9091-exec-10] INFO  c.e.A.ImplService.AttendanceService - Successfully checked out employee with ID: 1
+02:38:06.675 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+02:38:06.677 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02:38:06.691 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

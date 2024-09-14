@@ -22,11 +22,14 @@ public interface AttendanceMapper {
     @Select("SELECT * FROM employee_detail order by emp_id LIMIT #{pageNum} OFFSET #{pageSize}")
     List<User> findAll(int pageNum,int pageSize);
 
-    @Insert("INSERT INTO attendance (emp_id, check_in_time, check_in_date)\n" +
-            "    SELECT #{emp_id}, #{check_in_time}, #{check_in_date}\n" +
-            "    FROM employee_detail\n" +
-            "    WHERE emp_id = #{emp_id}")
+    @Insert("INSERT INTO attendance (emp_id, check_in_time, check_in_date) " +
+            "SELECT #{emp_id}, #{check_in_time}, #{check_in_date} " +
+            "FROM employee_detail " +
+            "WHERE emp_id = #{emp_id} " +
+            "AND NOT EXISTS ( " +
+            "    SELECT 1 FROM attendance " +
+            "    WHERE check_in_date = #{check_in_date})")
     void CheckIn(Attendance attendance);
-    @Update("UPDATE attendance SET check_out_time = #{check_out_time} WHERE emp_id = #{emp_id} AND check_out_time IS NULL")
+    @Update("UPDATE attendance SET check_out_time = #{check_out_time} WHERE emp_id = #{emp_id} ")
     void checkout(Attendance attendance);
 }
