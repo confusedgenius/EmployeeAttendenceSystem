@@ -1,38 +1,40 @@
 package com.example.AttendenceMyBat.RestController;
 
 import com.example.AttendenceMyBat.ImplService.AttendanceService;
-import com.example.AttendenceMyBat.model.Attendance;
 import com.example.AttendenceMyBat.model.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
+
+
+
 @RestController
 @RestControllerAdvice
 @RequestMapping("/api/attendance")
 public class AttendanceController {
-    private static Logger logger = LoggerFactory.getLogger(AttendanceController.class);
     @Autowired
     private AttendanceService attendanceService;
-
-
-    @GetMapping("/presentEmployee")
-    public ResponseEntity<List<User>> pres() {
-        //TODO: Add logging at controller response level.
-        final List<User> userList = attendanceService.presentt();
+    @GetMapping("/status/{status}")
+    public ResponseEntity<List<User>> getEmployeeStatus(@PathVariable("status") String status) {
+      List<User> userList ;
+        if ("present".equalsIgnoreCase(status))
+      userList= attendanceService.presentEmployee();
+        else if ("absent".equalsIgnoreCase(status))
+            userList=attendanceService.absentEmployee();
+        else
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         return new ResponseEntity<>(userList, HttpStatus.OK);
     }
+
     @GetMapping("/absentEmployee")
-    public ResponseEntity<List<User>> absent() {
-        //
-        if (attendanceService.absent().isEmpty()) {
-            return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
+    public ResponseEntity<List<User>> getAbsentEmployees() {
+            return new ResponseEntity<>(attendanceService.absentEmployee(), HttpStatus.OK);
         }
-        return new ResponseEntity<>(attendanceService.absent(), HttpStatus.OK);
-    }
 
     @PostMapping("/checkin/{emp_id}")
     public ResponseEntity<String> checkIn(@PathVariable("emp_id") int emp_id) throws Exception {
@@ -47,23 +49,27 @@ public class AttendanceController {
     }
 
     @GetMapping("/find/{emp_id}")
-    public ResponseEntity<List<User>> finduser(@PathVariable("emp_id") int emp_id) {
-        //
-        if (!attendanceService.findbyempID(emp_id).isEmpty())
-            return new ResponseEntity<>(attendanceService.findbyempID(emp_id), HttpStatus.OK);
-        logger.error("Employee not Found !! Check your employeeId : {} ",emp_id);
-        return new ResponseEntity<>(null, HttpStatus.OK);
+    public ResponseEntity<List<User>> findEmployeeAttendance(@PathVariable("emp_id") int emp_id) {
+            return new ResponseEntity<>(attendanceService.findEmployeeByEmpId(emp_id), HttpStatus.OK);
     }
 
-    @GetMapping("/show")
-    public ResponseEntity<List<Attendance>> find() {
-        //
-        //caching bhi implement krna ispe.AOP bhi dekhna
-        if (attendanceService.ShowAttendance().isEmpty())
-            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-        return new ResponseEntity<>(attendanceService.ShowAttendance(), HttpStatus.OK);
-    }
+//    @GetMapping("/show")
+//    public ResponseEntity<List<User>> showAllAttendance(
+//            @RequestParam(defaultValue = "1") int pageNumber,
+//            @RequestParam(defaultValue = "1") int pageSize) {
+//        final List<User> attendanceList = attendanceService.ShowAttendance(pageNumber,pageSize);
+//        //caching bhi implement krna ispe.AOP bhi dekhna
+////        if (!attendanceList.isEmpty()) return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+//        return new ResponseEntity<>(attendanceList, HttpStatus.OK);
+//    }
+@GetMapping("/show")
+@Cacheable(value = "attendanceCache", key = "#pageNumber + '-' + #pageSize")
+public ResponseEntity<List<User>> showAllAttendance(
+        @RequestParam(defaultValue = "1") int pageNumber,
+        @RequestParam(defaultValue = "10") int pageSize) {
 
-
+    List<User> attendanceList = attendanceService.ShowAttendance(pageNumber, pageSize);
+    return new ResponseEntity<>(attendanceList, HttpStatus.OK);
+}
 
 }
