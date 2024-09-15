@@ -1,7 +1,7 @@
 package com.example.AttendenceMyBat.RestController;
 
 import com.example.AttendenceMyBat.ImplService.AttendanceService;
-import com.example.AttendenceMyBat.model.User;
+import com.example.AttendenceMyBat.model.Employee;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -20,19 +20,19 @@ public class AttendanceController {
     @Autowired
     private AttendanceService attendanceService;
     @GetMapping("/status/{status}")
-    public ResponseEntity<List<User>> getEmployeeStatus(@PathVariable("status") String status) {
-      List<User> userList ;
+    public ResponseEntity<List<Employee>> getEmployeeStatus(@PathVariable("status") String status) {
+      List<Employee> employeeList;
         if ("present".equalsIgnoreCase(status))
-      userList= attendanceService.presentEmployee();
+      employeeList = attendanceService.presentEmployee();
         else if ("absent".equalsIgnoreCase(status))
-            userList=attendanceService.absentEmployee();
+            employeeList =attendanceService.absentEmployee();
         else
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        return new ResponseEntity<>(userList, HttpStatus.OK);
+        return new ResponseEntity<>(employeeList, HttpStatus.OK);
     }
 
     @GetMapping("/absentEmployee")
-    public ResponseEntity<List<User>> getAbsentEmployees() {
+    public ResponseEntity<List<Employee>> getAbsentEmployees() {
             return new ResponseEntity<>(attendanceService.absentEmployee(), HttpStatus.OK);
         }
 
@@ -49,7 +49,7 @@ public class AttendanceController {
     }
 
     @GetMapping("/find/{emp_id}")
-    public ResponseEntity<List<User>> findEmployeeAttendance(@PathVariable("emp_id") int emp_id) {
+    public ResponseEntity<List<Employee>> findEmployeeAttendance(@PathVariable("emp_id") int emp_id) {
             return new ResponseEntity<>(attendanceService.findEmployeeByEmpId(emp_id), HttpStatus.OK);
     }
 
@@ -64,11 +64,11 @@ public class AttendanceController {
 //    }
 @GetMapping("/show")
 @Cacheable(value = "attendanceCache", key = "#pageNumber + '-' + #pageSize")
-public ResponseEntity<List<User>> showAllAttendance(
+public ResponseEntity<List<Employee>> showAllAttendance(
         @RequestParam(defaultValue = "1") int pageNumber,
         @RequestParam(defaultValue = "10") int pageSize) {
 
-    List<User> attendanceList = attendanceService.ShowAttendance(pageNumber, pageSize);
+    List<Employee> attendanceList = attendanceService.ShowAttendance(pageNumber, pageSize);
     return new ResponseEntity<>(attendanceList, HttpStatus.OK);
 }
 

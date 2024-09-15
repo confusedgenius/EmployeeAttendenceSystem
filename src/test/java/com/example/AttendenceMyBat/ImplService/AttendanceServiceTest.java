@@ -1,7 +1,6 @@
 package com.example.AttendenceMyBat.ImplService;
 import com.example.AttendenceMyBat.mapper.AttendanceMapper;
-import com.example.AttendenceMyBat.model.Attendance;
-import com.example.AttendenceMyBat.model.User;
+import com.example.AttendenceMyBat.model.Employee;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -33,11 +32,11 @@ public class AttendanceServiceTest {
 
     @Test
     void testCheckIn() throws Exception {
-        int empId = 1;
-        when(attendanceMapper.findEmployeeByEmpId(empId)).thenReturn(Collections.singletonList(new User()));
-        attendanceService.checkIn(empId);
+        int emp_id = 1;
+        when(attendanceMapper.findEmployeeByEmpId(emp_id)).thenReturn(Collections.singletonList(new Employee()));
+        attendanceService.checkIn(emp_id);
         verify(attendanceMapper).CheckIn(argThat(attendance ->
-                attendance.getEmp_id() == empId &&
+                attendance.getEmp_id() == emp_id &&
                         attendance.getCheck_in_time() != null &&
                         attendance.getCheck_in_date().equals(LocalDate.now())
         ));
@@ -47,7 +46,7 @@ public class AttendanceServiceTest {
     void testCheckOut() throws Exception {
         int empId = 1;
 
-        when(attendanceMapper.findEmployeeByEmpId(empId)).thenReturn(Collections.singletonList(new User()));
+        when(attendanceMapper.findEmployeeByEmpId(empId)).thenReturn(Collections.singletonList(new Employee()));
 
         attendanceService.checkOut(empId);
 
@@ -62,44 +61,44 @@ public class AttendanceServiceTest {
     void testShowAttendance() {
         int pageNum = 1;
         int pageSize = 10;
-        List<User> users = Collections.singletonList(new User());
-        when(attendanceMapper.findAll(pageSize, (pageNum - 1) * pageSize)).thenReturn(users);
-        List<User> result = attendanceService.ShowAttendance(pageNum, pageSize);
-        assertEquals(users.size(), result.size());
-        assertEquals(users, result);
+        List<Employee> employees = Collections.singletonList(new Employee());
+        when(attendanceMapper.findAll(pageSize, 0)).thenReturn(employees);
+        List<Employee> result = attendanceService.ShowAttendance(pageNum, pageSize);
+        assertEquals(employees.size(), result.size());
+        assertEquals(employees, result);
     }
 
     @Test
     void testPresentEmployee() {
-        List<User> users = Collections.singletonList(new User());
-        when(attendanceMapper.presentEmployee(LocalDate.now())).thenReturn(users);
+        List<Employee> employees = Collections.singletonList(new Employee());
+        when(attendanceMapper.presentEmployee(LocalDate.now())).thenReturn(employees);
 
-        List<User> result = attendanceService.presentEmployee();
+        List<Employee> result = attendanceService.presentEmployee();
 
-        assertEquals(users.size(), result.size());
-        assertEquals(users, result);
+        assertEquals(employees.size(), result.size());
+        assertEquals(employees, result);
     }
 
     @Test
     void testAbsentEmployee() {
-        List<User> users = Collections.singletonList(new User());
-        when(attendanceMapper.findAbsentEmployee(LocalDate.now())).thenReturn(users);
+        List<Employee> employees = Collections.singletonList(new Employee());
+        when(attendanceMapper.findAbsentEmployee(LocalDate.now())).thenReturn(employees);
 
-        List<User> result = attendanceService.absentEmployee();
+        List<Employee> result = attendanceService.absentEmployee();
 
-        assertEquals(users.size(), result.size());
-        assertEquals(users, result);
+        assertEquals(employees.size(), result.size());
+        assertEquals(employees, result);
     }
 
     @Test
     void testFindEmployeeByEmpId() {
         int empId = 1;
-        List<User> users = Collections.singletonList(new User());
-        when(attendanceMapper.findEmployeeByEmpId(empId)).thenReturn(users);
+        List<Employee> employees = Collections.singletonList(new Employee());
+        when(attendanceMapper.findEmployeeByEmpId(empId)).thenReturn(employees);
 
-        List<User> result = attendanceService.findEmployeeByEmpId(empId);
+        List<Employee> result = attendanceService.findEmployeeByEmpId(empId);
 
-        assertEquals(users.size(), result.size());
-        assertEquals(users, result);
+        assertEquals(employees.size(), result.size());
+        assertEquals(employees, result);
     }
 }

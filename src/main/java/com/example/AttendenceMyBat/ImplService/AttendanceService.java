@@ -1,7 +1,7 @@
 package com.example.AttendenceMyBat.ImplService;
 import com.example.AttendenceMyBat.mapper.AttendanceMapper;
 import com.example.AttendenceMyBat.model.Attendance;
-import com.example.AttendenceMyBat.model.User;
+import com.example.AttendenceMyBat.model.Employee;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,19 +33,19 @@ public class AttendanceService {
 //
 //    }
 
-    public List<User> ShowAttendance(int pageNum, int pageSize) {
+    public List<Employee> ShowAttendance(int pageNum, int pageSize) {
         if (pageNum < 1)
             pageNum = 1;
         if (pageSize <= 0)
             pageSize = 10;
         int offset = (pageNum - 1) * pageSize;
-        List<User> attendanceList = attendanceMapper.findAll(pageSize, offset);
+        List<Employee> attendanceList = attendanceMapper.findAll(pageSize, offset);
         log.info("Retrieved {} attendance records for page {}.", attendanceList.size(), pageNum);
         return attendanceList;
     }
 
     public void checkValidEmployee(int empId) throws Exception {
-        List<User> emp=attendanceMapper.findEmployeeByEmpId(empId);
+        List<Employee> emp=attendanceMapper.findEmployeeByEmpId(empId);
         if (emp.isEmpty()) {
             log.error("Employee ID {} not found in employee_detail table.", empId);
             throw new Exception("Employee Id not found in employee table");
@@ -53,7 +53,7 @@ public class AttendanceService {
         log.info("Employee ID {} found in employee_detail table.", empId);
     }
 
-    public List<User> checkEmpty(List<User> employees) {
+    public List<Employee> checkEmpty(List<Employee> employees) {
         if (!employees.isEmpty()) {
             log.info("Found {} employees.", employees.size());
             return employees;
@@ -71,21 +71,21 @@ public class AttendanceService {
         attendanceMapper.checkout(attendance);
         log.info("Successfully checked out employee with ID: {}", empId);
     }
-    public List<User> presentEmployee() {
+    public List<Employee> presentEmployee() {
         log.info("Fetching employees present today.");
-        List<User> presentEmployees = checkEmpty(attendanceMapper.presentEmployee(LocalDate.now()));
+        List<Employee> presentEmployees = checkEmpty(attendanceMapper.presentEmployee(LocalDate.now()));
         log.info("Retrieved : {} employees are  present today.", presentEmployees.size());
         return presentEmployees;
     }
-    public List<User> absentEmployee() {
+    public List<Employee> absentEmployee() {
         log.info("Fetching employees absent today.");
-        List<User> absentEmployees = checkEmpty(attendanceMapper.findAbsentEmployee(LocalDate.now()));
+        List<Employee> absentEmployees = checkEmpty(attendanceMapper.findAbsentEmployee(LocalDate.now()));
         log.info("Retrieved : {} employees are absent today.",  absentEmployees.size());
         return absentEmployees;
     }
-    public List<User> findEmployeeByEmpId(int empId) {
+    public List<Employee> findEmployeeByEmpId(int empId) {
         log.info("Fetching employee with ID: {}", empId);
-        List<User> employees = attendanceMapper.findEmployeeByEmpId(empId);
+        List<Employee> employees = attendanceMapper.findEmployeeByEmpId(empId);
         if (employees.isEmpty()) {
             log.error("Employee with ID : {} not found.", empId);
         } else {
