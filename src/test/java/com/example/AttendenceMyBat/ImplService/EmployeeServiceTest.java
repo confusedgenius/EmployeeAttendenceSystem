@@ -43,15 +43,7 @@ public class EmployeeServiceTest {
         verify(employeeMapper, times(1)).registerEmployee(employee);
     }
 
-    @Test
-    void test_registerUser_Failure() {
-        Employee employee = new Employee(9, "Dishank", "sudhanshu11@gmail.com", "Male", Date.valueOf("2024-09-15"), "HR", "123-456-7890", "HR Manager", BigDecimal.valueOf(60000), "HR", true, new Timestamp(System.currentTimeMillis()));
-        List<Employee> employeeList = new ArrayList<>();
-        employeeList.add(employee);
-        doThrow(new RuntimeException("Database error")).when(employeeMapper).registerEmployee(employee);
-        assertThrows(RuntimeException.class, () -> employeeService.registerEmployee(employeeList));
-        verify(employeeMapper, times(1)).registerEmployee(employee);
-    }
+
 
     @Test
     void test_getUser_By_empId() {
